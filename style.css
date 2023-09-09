@@ -134,7 +134,7 @@ section {
 }
 
 .home .content {
-  /* flex: 1 1 40rem; */
+  flex: 1 1 40rem;
   padding-top: 6.5rem;
 }
 
@@ -156,9 +156,11 @@ section {
 
 .home .image img {
   /* width: 100%; */
-  margin-left: 24rem;
-  height: 100vh;
-  /* padding: 1rem; */
+  margin-left: 15rem;
+  margin-top: 10rem;
+  border-radius: 2rem;
+  height: 80vh;
+  padding: 1rem;
   /* animation: float 3s linear infinite; */
 }
 
@@ -782,9 +784,10 @@ header img {
   }
 
   .home .image img {
+    margin-top: 0;
     margin-left: 0;
     width: 100%;
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
     height: 64vh;
   }
 }
@@ -905,8 +908,7 @@ body.dark-mode .home {
   background: black
 }
 body.dark-mode .popular .box-container .box {
-  background-color: #333333;
-}
+  background-color: #333333;}
 
 body.dark-mode .review .box-container .box {
   background-color: black;
