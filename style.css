@@ -77,7 +77,7 @@ header .navbar a:hover {
   cursor: pointer;
 }
 
-.dropdown:hover {
+/* .dropdown:hover {
   color: var(--btn-color);
 }
 
@@ -93,7 +93,7 @@ header .navbar a:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+} */
 
 #menu-bars {
   color: #666;
@@ -152,7 +152,7 @@ section {
 
 .home .image {
   flex: 1 1 40rem;
-} 
+}
 
 .home .image img {
   /* width: 100%; */
@@ -356,7 +356,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 0;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .btn::before {
@@ -380,18 +380,21 @@ section {
   width: 100%;
   left: 0;
 }
+
 .btnn {
   display: inline-block;
   padding: 0.8rem 3rem;
-  border: 0.2rem solid var(--btn-color);
-  color: var(--btn-color);
+  border: 0.2rem solid black;
+  background: repeating-radial-gradient(black, transparent 100px);
+  color: white;
   cursor: pointer;
-  font-size: 1.7rem;
-  border-radius: 0.5rem;
+  font-size: 2rem;
+  border-radius: 3.5rem;
   position: relative;
   overflow: hidden;
   z-index: 0;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  /* margin-left: 18rem; */
 }
 
 .btnn::before {
@@ -420,16 +423,16 @@ section {
   display: inline-block;
   padding: 0.8rem 3rem;
   border: 0.2rem solid wheat;
+  background: repeating-radial-gradient(green, transparent 100px);
   color: white;
   cursor: pointer;
   font-size: 1.7rem;
-  border-radius: 0.5rem;
+  border-radius: 3.5rem;
   position: relative;
   overflow: hidden;
   z-index: 0;
-  margin-top: 1rem;
-  margin-left: 2rem;
-  background: var(--btn-color);
+  margin-top: 2rem;
+  margin-left: 10rem;
 }
 
 .go::before {
@@ -489,9 +492,10 @@ header img {
   padding: 1rem 0.1rem;
 }
 
-.review{
-    padding-top: 10rem;
+.review {
+  padding-top: 10rem;
 }
+
 .review .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -564,11 +568,11 @@ header img {
 }
 
 .footer-hr-cell {
-  border-bottom: 1px solid #acaaaa; 
-  padding: 5px 0; 
+  border-bottom: 1px solid #acaaaa;
+  padding: 5px 0;
 }
 
-.footer-hr-cell > * {
+.footer-hr-cell>* {
   vertical-align: middle;
 }
 
@@ -657,9 +661,12 @@ header img {
   html {
     font-size: 50%;
   }
-.popular, .speciality{
-  padding: 2rem;
-}
+
+  .popular,
+  .speciality {
+    padding: 2rem;
+  }
+
   #menu-bars {
     display: initial;
   }
@@ -671,7 +678,8 @@ header img {
   .main-box-speciality .box p {
     display: none;
   }
-  .main-box-speciality .box .content{
+
+  .main-box-speciality .box .content {
     height: 22rem;
   }
 
@@ -692,9 +700,10 @@ header img {
   }
 
   .popular .box-container .box .price {
-   padding: .3rem 1rem;
-   font-size: 1.5rem;
+    padding: .3rem 1rem;
+    font-size: 1.5rem;
   }
+
   .popular .box-container .box .category-dropdown {
     height: 2.5rem;
     width: 4rem;
@@ -704,22 +713,25 @@ header img {
   .btn {
     padding: .5rem 1.5rem;
     font-size: 1rem;
-    margin: 1rem;
+    /* margin-left: 8rem; */
   }
 
   .btnn {
     padding: .5rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    /* margin-left: 10rem; */
   }
-  
-  .go{
+
+  .go {
     padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    margin-left: 7rem;
+    font-size: 1.5rem;
+    margin-left: 4rem;
   }
-  .popup-option{
-    font-size: .6rem;
+
+  .popup-option {
+    font-size: .9rem;
   }
+
   .cart-table .header-spaced {
     font-size: 1.8rem;
     text-align: center;
@@ -752,6 +764,7 @@ header img {
   .cart-table .item-quantity {
     font-size: 2rem;
   }
+
   .navbar {
     position: absolute;
     top: 0;
@@ -892,23 +905,34 @@ body.dark-mode {
   background-color: black;
   color: white;
 }
+
+body.dark-mode .btnn {
+  color: black;
+  background: repeating-radial-gradient(white, rgba(100, 100, 111, 0.2) 100px);
+}
+
+body.dark-mode .popup-option {
+  color: black;
+  background: repeating-radial-gradient(white, rgba(100, 100, 111, 0.2) 100px);
+}
+
 body.dark-mode .speciality-heading {
   color: white;
 }
-body.dark-mode .popup-option {
-  background: #191919;
-}
-body.dark-mode .go {
-  background-color: white;
-  color: #191919;
-}
+
+/* body.dark-mode .go {
+  color: black;
+  background: repeating-radial-gradient(white, rgba(100, 100, 111, 0.2) 100px);
+} */
 
 body.dark-mode .home {
   background-image: none;
   background: black
 }
+
 body.dark-mode .popular .box-container .box {
-  background-color: #333333;}
+  background-color: #333333;
+}
 
 body.dark-mode .review .box-container .box {
   background-color: black;
@@ -929,8 +953,9 @@ body.dark-mode .home .content p {
 
 body.dark-mode .header {
   background-color: #191919
-  /* background-color: transparent */
+    /* background-color: transparent */
 }
+
 body.dark-mode .header a {
   color: white;
   background: #191919
@@ -995,15 +1020,18 @@ body.dark-mode .header a:hover {
 
 /*------------------------contact-us style---------------------------*/
 
-.contact{
-    padding-top: 10rem;
+.contact {
+  padding-top: 10rem;
 }
+
 .contact-us {
   margin: auto;
 }
-iframe{
-    margin-bottom: 3rem;
+
+iframe {
+  margin-bottom: 3rem;
 }
+
 .contact-col {
   flex-basis: 48%;
   margin-bottom: 30px;
@@ -1044,19 +1072,22 @@ iframe{
   font-weight: bold;
   cursor: pointer;
 }
-.popup-option{
+
+.popup-option {
   padding: 0.8rem;
-  border: 0.2rem solid var(--btn-color);
-  color: var(--btn-color);
+  border: 0.2rem solid black;
+  color: white;
+  background: repeating-radial-gradient(black, transparent 100px);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-left: .8rem;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
   position: relative;
   overflow: hidden;
   z-index: 0;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
+
 
 .popup-option::before {
   content: "";
@@ -1082,21 +1113,21 @@ iframe{
 
 .scroll-down {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 60px;
+  right: 10px;
   z-index: 1000;
   background-color: transparent;
-  border-radius: 50%;
-  padding: 8px;
+  border-radius: 70%;
+  padding: 4px 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
 }
 
 .scroll-down i {
   color: var(--btn-color);
-  font-size: 24px;
+  font-size: 40px;
 }
 
 .scroll-down:hover {
-  transform: translateY(4px);
+  transform: translateY(10px);
 }
